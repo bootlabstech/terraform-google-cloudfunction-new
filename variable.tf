@@ -43,8 +43,8 @@ variable "ingress_settings" {
 }
 
 variable "available_memory" {
-  type        = string
-  default     = "256M"
+  type        = number
+  default     = 256
   description = "Memory available to the function"
 }
 
@@ -58,4 +58,12 @@ variable "max_instance_count" {
   type        = number
   default     = 1
   description = "Maximum number of instances"
+}
+variable "existing_bucket_name" {
+  type        = string
+  description = "the cloud storage bucket"
+}
+variable "existing_object_name" {
+  type        = string
+  description = "The zip file of the bucket"
 }
