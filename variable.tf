@@ -67,3 +67,8 @@ variable "existing_object_name" {
   type        = string
   description = "The zip file of the bucket"
 }
+ 
+variable "host_project_id" {
+  description = "The host project ID where IAM bindings should be applied"
+  type        = string
+}
