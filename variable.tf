@@ -25,10 +25,6 @@ variable "vpc_connector" {
   description = "Full resource ID of the VPC connector"
 }
 
-variable "bucket_name_prefix" {
-  type        = string
-  description = "Prefix for the GCS bucket name"
-}
 
 variable "vpc_connector_egress_settings" {
   type        = string
@@ -43,8 +39,7 @@ variable "ingress_settings" {
 }
 
 variable "available_memory" {
-  type        = number
-  default     = 256
+  type        = string
   description = "Memory available to the function"
 }
 
